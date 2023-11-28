@@ -1,0 +1,81 @@
+:root{
+    --maintext: rgb(61, 50, 76);
+    --overlay: rgba(55, 55, 79, 0.3);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('./assets/design-space-paper-textured-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    color: var(--maintext);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Comic Neue';
+    display: grid;
+    place-items: center;
+}
+form{
+    background-color: var(--overlay);
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fatty1{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 300px;
+    transform: rotate(-20deg);
+}
+#fatty2{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    width: 300px;
+    transform: rotate(20deg);
+}
+fieldset{
+    font-size: large;
+    border: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+legend{
+    text-align: center;
+    font-weight: bold;
+}
+.info-input{
+    display: flex;
+    flex-direction: column;
+}
+.radio-input{
+    display: flex;
+    gap: 15px;
+}
+input,select{
+    background-color: transparent;
+    padding: 5px 5px;
+    border: var(--maintext) 2px solid ;
+    border-radius: 5px;
+}
+
+label{
+    margin: 10px;
+}
+button{
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: var(--maintext) 1.5px solid ;
+}

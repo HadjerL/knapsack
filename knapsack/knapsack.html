@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="knapsack.css">
+    <title>knapsack problem</title>
+</head>
+<body>
+    <main>
+        <h1>Selct what you want to eat</h1>
+        <img src="../assets/fatty.png" alt="fatty">
+        <section class="food">
+            <button id="btn--almond" type="button">
+                <div>
+                    <img src="../assets/food/almonds.webp" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>160</span></p>
+                </div>
+            </button> 
+            <button id="btn--apples" type="button">
+                <div>
+                    <img src="../assets/food/apples.jpg" alt="">
+                    <p>Satisfation:<span>6</span></p>
+                    <p>Calories:<span>95</span></p>
+                </div>
+            </button>
+            <button id="btn--avocado" type="button">
+                <div>
+                    <img src="../assets/food/Avocado.jpg" alt="">
+                    <p>Satisfation:<span>9</span></p>
+                    <p>Calories:<span>160</span></p>
+                </div>
+            </button>
+            <button id="btn--banana" type="button">
+                <div>
+                    <img src="../assets/food/bananas.jfif" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>105</span></p>
+                </div>
+            </button>
+            <button id="btn--blueberry" type="button">
+                <div>
+                    <img src="../assets/food/blueberry.webp" alt="">
+                    <p>Satisfation:<span>9</span></p>
+                    <p>Calories:<span>85</span></p>
+                </div>
+            </button>
+            <button id="btn--bread" type="button">
+                <div>
+                    <img src="../assets/food/bread.png" alt="">
+                    <p>Satisfation:<span>6</span></p>
+                    <p>Calories:<span>80</span></p>
+                </div>
+            </button>
+            <button id="btn--broccoli" type="button">
+                <div>
+                    <img src="../assets/food/broccoli.jpg" alt="">
+                    <p>Satisfation:<span>7</span></p>
+                    <p>Calories:<span>55</span></p>
+                </div>
+            </button>
+            <button id="btn--cheese-chedder" type="button">
+                <div>
+                    <img src="../assets/food/Cheese (Cheddar).jpg" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>113</span></p>
+                </div>
+            </button>
+            <button id="btn--chickpeas" type="button">
+                <div>
+                    <img src="../assets/food/Chickpeas.webp" alt="">
+                    <p>Satisfation:<span>7</span></p>
+                    <p>Calories:<span>269</span></p>
+                </div>
+            </button>
+            <button id="btn--cottage" type="button">
+                <div>
+                    <img src="../assets/food/Cottage Cheese.webp" alt="">
+                    <p>Satisfation:<span>7</span></p>
+                    <p>Calories:<span>120</span></p>
+                </div>
+            </button>
+            <button id="btn--eggs" type="button">
+                <div>
+                    <img src="../assets/food/eggs.jfif" alt="">
+                    <p>Satisfation:<span>7</span></p>
+                    <p>Calories:<span>78</span></p>
+                </div>
+            </button>
+            <button id="btn--grilled-chicken" type="button">
+                <div>
+                    <img src="../assets/food/grilled-chicken.png" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>165</span></p>
+                </div>
+            </button>
+            <button id="btn--lean-beef" type="button">
+                <div>
+                    <img src="../assets/food/Lean Beef.jpg" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>250</span></p>
+                </div>
+            </button>
+            <button id="btn--lentils" type="button">
+                <div>
+                    <img src="../assets/food/lentils.jpg" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>230</span></p>
+                </div>
+            </button>
+            <button id="btn--milk" type="button">
+                <div>
+                    <img src="../assets/food/Milk.jpg" alt="">
+                    <p>Satisfation:<span>7</span></p>
+                    <p>Calories:<span>102</span></p>
+                </div>
+            </button>
+            <button id="btn--oatmeal" type="button">
+                <div>
+                    <img src="../assets/food/Oatmeal.jfif" alt="">
+                    <p>Satisfation:<span>7</span></p>
+                    <p>Calories:<span>150</span></p>
+                </div>
+            </button>
+            <button id="btn--peanut-butter" type="button">
+                <div>
+                    <img src="../assets/food/Peanut Butter.webp" alt="">
+                    <p>Satisfation:<span>9</span></p>
+                    <p>Calories:<span>190</span></p>
+                </div>
+            </button>
+            <button id="btn--rice" type="button">
+                <div>
+                    <img src="../assets/food/rice.jpg" alt="">
+                    <p>Satisfation:<span>6</span></p>
+                    <p>Calories:<span>216</span></p>
+                </div>
+            </button>
+            <button id="btn--salmon" type="button">
+                <div>
+                    <img src="../assets/food/salmon.jpg" alt="">
+                    <p>Satisfation:<span>9</span></p>
+                    <p>Calories:<span>208</span></p>
+                </div>
+            </button>
+            <button id="btn--spinach" type="button">
+                <div>
+                    <img src="../assets/food/spinach.jfif" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>23</span></p>
+                </div>
+            </button>
+            <button id="btn--sweet-potato" type="button">
+                <div>
+                    <img src="../assets/food/sweet-potato.jfif" alt="">
+                    <p>Satisfation:<span>8</span></p>
+                    <p>Calories:<span>86</span></p>
+                </div>
+            </button>
+            <button id="btn--tofu" type="button">
+                <div>
+                    <img src="../assets/food/tofu.jpg" alt="">
+                    <p>Satisfation:<span>7</span></p>
+                    <p>Calories:<span>94</span></p>
+                </div>
+            </button>
+            <button id="btn--yogurt" type="button">
+                <div>
+                    <img src="../assets/food/yogurt.jpg" alt="">
+                    <p>Satisfation: <span>6</span></p>
+                    <p>Calories: <span>100</span></p>
+                </div>
+            </button>
+        </section>
+        <div style="padding: 10px; display: flex; justify-content: center; flex-direction: column; margin-top: 20px;">
+            <h2 style="text-align: center; margin-bottom: 10px;">result</h2>
+            <p id="max-value"></p>
+            <div>
+                <ul id="selected-elements"></ul>
+            </div>
+            <button type="button" id="result">Get result</button>
+        </div>
+        <hr>
+        <div style="padding: 10px; display: flex; justify-content: center; flex-direction: column; margin-top: 20px;">
+            <h2 style="text-align: center; margin-bottom: 10px;">result</h2>
+            <p id="max-value-test"></p>
+            <div>
+                <ul id="selected-elements-test"></ul>
+            </div>
+            <button type="button" id="result-test">Get result</button>
+        </div>
+    </main>
+    <script src="knapsack.js"></script>
+</body>
+</html>
